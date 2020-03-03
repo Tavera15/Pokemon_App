@@ -1,19 +1,21 @@
-import React, {Component} from 'react';
-import PokemonCard from './PokemonCard';
-import {Grid} from '@material-ui/core';
+import React, { Component, lazy, Suspense } from 'react';
+import { Grid } from '@material-ui/core';
 import './cardList.css';
+import Loading from './Loading';
+const PokemonCard = lazy(() => import('./PokemonCard'));
+
 
 class CardList extends Component{
 
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
-			pokemon: []
+			pokemon: [],
 		};
 	}
 
 	shouldComponentUpdate(nextProps, nextState){
-		if(this.state.pokemon != nextState.pokemon)
+		if(this.state.pokemon !== nextState.pokemon)
 			return true;
 
 		return false;
@@ -42,17 +44,20 @@ class CardList extends Component{
 
 	render(){
 		return(
-			<Grid container spacing={0} className="listContainer">
-				{this.state.pokemon.map((poke, i) =>
-					<PokemonCard
-						key={i+1}
-						name={poke.name}
-						sprite={poke.sprites.front_default}
-						pokeType= {(poke.types.length === 1) 
-							? poke.types[0].type.name 
-							: poke.types[1].type.name + "/" + poke.types[0].type.name}
-					/>
-				)}
+			<Grid container spacing={(window.innerWidth <= 700) ? 0 : 1} className="listContainer">
+				<Suspense fallback={<Loading />}>
+					{this.state.pokemon.map((poke, i) =>					
+						<PokemonCard
+							key={i+1}
+							name={poke.name}
+							id={poke.id}
+							sprite={poke.sprites.front_default}
+							pokeType= {(poke.types.length === 1) 
+								? poke.types[0].type.name 
+								: poke.types[1].type.name + "/" + poke.types[0].type.name}
+						/>
+					)}
+				</Suspense>
 			</Grid>
 		);
 	}
