@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eff0503ffc7a412d9b3861556d0bd24b",
+    "revision": "3cf5a3c6a681e618fc521dd7c6d1f35f",
     "url": "/Pokemon_App/index.html"
   },
   {
-    "revision": "b1b8c47e6ece8df5e6e3",
+    "revision": "362d7318e09fb8104bc7",
     "url": "/Pokemon_App/static/css/main.4f203556.chunk.css"
   },
   {
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Pokemon_App/static/js/2.b455df51.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0fb968d6f1e5e913c224",
-    "url": "/Pokemon_App/static/js/3.9e519a43.chunk.js"
+    "revision": "f857bbd45c478ab927ec",
+    "url": "/Pokemon_App/static/js/3.ec4e5704.chunk.js"
   },
   {
-    "revision": "b1b8c47e6ece8df5e6e3",
-    "url": "/Pokemon_App/static/js/main.9bb663c9.chunk.js"
+    "revision": "362d7318e09fb8104bc7",
+    "url": "/Pokemon_App/static/js/main.244dceb8.chunk.js"
   },
   {
-    "revision": "6e00699e290c03ed5d50",
-    "url": "/Pokemon_App/static/js/runtime-main.fbae2dff.js"
+    "revision": "e8f0aef2301495a19db1",
+    "url": "/Pokemon_App/static/js/runtime-main.2d76aaa9.js"
   }
 ]);
