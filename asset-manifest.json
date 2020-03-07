@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Pokemon/static/css/main.4f203556.chunk.css",
-    "main.js": "/Pokemon/static/js/main.b30f37ad.chunk.js",
-    "main.js.map": "/Pokemon/static/js/main.b30f37ad.chunk.js.map",
-    "runtime-main.js": "/Pokemon/static/js/runtime-main.2cf1ba03.js",
-    "runtime-main.js.map": "/Pokemon/static/js/runtime-main.2cf1ba03.js.map",
-    "static/js/2.b455df51.chunk.js": "/Pokemon/static/js/2.b455df51.chunk.js",
-    "static/js/2.b455df51.chunk.js.map": "/Pokemon/static/js/2.b455df51.chunk.js.map",
-    "static/js/3.46321f01.chunk.js": "/Pokemon/static/js/3.46321f01.chunk.js",
-    "static/js/3.46321f01.chunk.js.map": "/Pokemon/static/js/3.46321f01.chunk.js.map",
-    "index.html": "/Pokemon/index.html",
-    "precache-manifest.dd4e85a575fb157e4669f918f7460760.js": "/Pokemon/precache-manifest.dd4e85a575fb157e4669f918f7460760.js",
-    "service-worker.js": "/Pokemon/service-worker.js",
-    "static/css/main.4f203556.chunk.css.map": "/Pokemon/static/css/main.4f203556.chunk.css.map",
-    "static/js/2.b455df51.chunk.js.LICENSE.txt": "/Pokemon/static/js/2.b455df51.chunk.js.LICENSE.txt"
+    "main.css": "/Pokemon_App/static/css/main.4f203556.chunk.css",
+    "main.js": "/Pokemon_App/static/js/main.288efcda.chunk.js",
+    "main.js.map": "/Pokemon_App/static/js/main.288efcda.chunk.js.map",
+    "runtime-main.js": "/Pokemon_App/static/js/runtime-main.f61a8fca.js",
+    "runtime-main.js.map": "/Pokemon_App/static/js/runtime-main.f61a8fca.js.map",
+    "static/js/2.b455df51.chunk.js": "/Pokemon_App/static/js/2.b455df51.chunk.js",
+    "static/js/2.b455df51.chunk.js.map": "/Pokemon_App/static/js/2.b455df51.chunk.js.map",
+    "static/js/3.46321f01.chunk.js": "/Pokemon_App/static/js/3.46321f01.chunk.js",
+    "static/js/3.46321f01.chunk.js.map": "/Pokemon_App/static/js/3.46321f01.chunk.js.map",
+    "index.html": "/Pokemon_App/index.html",
+    "precache-manifest.2d0c57f3269d99c644c225aff0fc6d8f.js": "/Pokemon_App/precache-manifest.2d0c57f3269d99c644c225aff0fc6d8f.js",
+    "service-worker.js": "/Pokemon_App/service-worker.js",
+    "static/css/main.4f203556.chunk.css.map": "/Pokemon_App/static/css/main.4f203556.chunk.css.map",
+    "static/js/2.b455df51.chunk.js.LICENSE.txt": "/Pokemon_App/static/js/2.b455df51.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2cf1ba03.js",
+    "static/js/runtime-main.f61a8fca.js",
     "static/js/2.b455df51.chunk.js",
     "static/css/main.4f203556.chunk.css",
-    "static/js/main.b30f37ad.chunk.js"
+    "static/js/main.288efcda.chunk.js"
   ]
 }
