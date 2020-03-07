@@ -38,7 +38,7 @@ class App extends Component{
 		return(
 			<Router>
 				{this.state.pokemon.map((poke, i) => 
-					<Route key={i} exact path={"/Pokemon_App/Pokemon"+poke.id} component={() => 
+					<Route key={i} exact path={"/Pokemon_App/"+poke.name} component={() => 
 						<PokemonPage
 							name={poke.name} 
 							sprite={poke.sprites.front_default}

@@ -34,7 +34,7 @@ const PokemonCard = ({name, id, pokeTypes, sprite}) => {
 					image={sprite}
 					style={classes.cardImage}
 				/>
-				<Button style={{width: '100%'}} variant="contained" color="primary" href={"/Pokemon_App/Pokemon"+id}>
+				<Button style={{width: '100%'}} variant="contained" color="primary" href={"/Pokemon_App/"+name}>
 				  Open Page
 				</Button>
 			</Card>
