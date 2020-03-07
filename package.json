@@ -2,7 +2,7 @@
   "name": "pokemon_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Tavera15.github.io/Pokemon",
+  "homepage": "https://Tavera15.github.io/Pokemon_App",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@testing-library/jest-dom": "^4.2.4",

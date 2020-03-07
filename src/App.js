@@ -38,7 +38,7 @@ class App extends Component{
 		return(
 			<Router>
 				{this.state.pokemon.map((poke, i) => 
-					<Route key={i} exact path={/Pokemon/+poke.id} component={() => 
+					<Route key={i} exact path={/Pokemon_App/+poke.id} component={() => 
 						<PokemonPage
 							name={poke.name} 
 							sprite={poke.sprites.front_default}
@@ -62,7 +62,7 @@ class App extends Component{
 				<PokeBar/>
 				<Router>
 					{this.createRoute()}
-					<Route exact path="/Pokemon/" component={() => <CardList pokemon={this.state.pokemon} />} />
+					<Route exact path="/Pokemon_App" component={() => <CardList pokemon={this.state.pokemon} />} />
 				</Router>		
 			</div>
 		);

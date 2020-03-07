@@ -8,7 +8,7 @@ const PokeBar = () => {
         <AppBar style={{ position: 'relative'}}>
 	      <Toolbar>
 	      	<Tabs centered value={false}>
-	      		<Tab label="Gen I" href="/Pokemon/" />
+	      		<Tab label="Gen I" href="/Pokemon_App" />
 	      	</Tabs>
  	      </Toolbar>
 	    </AppBar>
