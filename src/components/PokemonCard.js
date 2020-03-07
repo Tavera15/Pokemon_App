@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardMedia, CardHeader, Grid } from '@material-ui/core';
+import { Card, CardMedia, CardHeader, Grid, Button } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 
 function CardStyle()
@@ -19,21 +19,24 @@ function CardStyle()
 	);
 }
 
-const PokemonCard = ({name, id, pokeType, sprite}) => {
+const PokemonCard = ({name, id, pokeTypes, sprite}) => {
 	const classes = CardStyle();
 	return(
 		<Grid item lg={2} md={4} sm={4} xs={12}>
 			<Card variant="outlined" style={classes.root}>
 				<CardHeader 
 					title={name.toUpperCase()}
-		          	subheader={pokeType}
-		          	avatar={<Avatar>{id}</Avatar>}
+		          	subheader={pokeTypes}
+		          	avatar={<Avatar style={{backgroundColor: 'black'}}>{id}</Avatar>}
 				/>
 				<CardMedia
 					alt={name}
 					image={sprite}
 					style={classes.cardImage}
 				/>
+				<Button style={{width: '100%'}} variant="contained" color="primary" href={'/pokemon/'+id}>
+				  Open Page
+				</Button>
 			</Card>
 		</Grid>
 	);

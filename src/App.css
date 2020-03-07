@@ -36,8 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-body{
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
