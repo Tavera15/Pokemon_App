@@ -3,12 +3,13 @@ import { Tabs, Tab } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 
-const PokeBar = () => {
+function PokeBar() 
+{
 	return(
         <AppBar style={{ position: 'relative'}}>
 	      <Toolbar>
 	      	<Tabs centered value={false}>
-	      		<Tab label="Gen I" href="/Pokemon_App" />
+	      		<Tab label="Gen I" href="/Pokemon_App"/>
 	      	</Tabs>
  	      </Toolbar>
 	    </AppBar>

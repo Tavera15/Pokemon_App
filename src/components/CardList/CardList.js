@@ -1,27 +1,29 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import './cardList.css';
 import Loading from '../LoadingPage/Loading';
+import PokemonCard from '../PokemonCard'
 
-const PokemonCard = lazy(() => import('../PokemonCard'));
-
-const CardList = ({pokemon}) => {
+function CardList(props) {
 	return(
-		<Grid container spacing={(window.innerWidth <= 700) ? 0 : 1} className="listContainer">
-			<Suspense fallback={<Loading />}>
-				{pokemon.map((poke, i) =>
-					<PokemonCard
-						key={i+1}
-						name={poke.name}
-						id={poke.id}
-						sprite={poke.sprites.front_default}
-						pokeType={(poke.types.length === 1) 
-							? poke.types[0].type.name 
-							: poke.types[1].type.name + "/" + poke.types[0].type.name}
-					/>
-				)}
-			</Suspense>
- 		</Grid>
+		<div>
+			{!props.isLoaded ? <Loading />
+			:
+				<Grid container spacing={(window.innerWidth <= 700) ? 0 : 1} className="listContainer">
+					{props.pokemon.map((poke, i) =>
+						<PokemonCard
+							key={i+1}
+							name={poke.data.name}
+							id={poke.data.id}
+							sprite={poke.data.sprites.front_default}
+							pokeType={(poke.data.types.length === 1) 
+								? poke.data.types[0].type.name 
+								: poke.data.types[1].type.name + "/" + poke.data.types[0].type.name}
+						/>
+					)}
+				</Grid>
+			}
+		</div>
 	);
 }
 
